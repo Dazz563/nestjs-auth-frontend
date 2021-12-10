@@ -1,0 +1,43 @@
+<div fxLayout="row"
+     fxLayoutAlign="center center"
+     class="container">
+
+    <mat-card fxFlex.xs="85"
+              fxFlex.sm="70"
+              fxFlex.md="40"
+              fxFlex.lg="40"
+              fxFlex.xl="30">
+
+
+        <form fxLayout="column"
+              fxLayoutAlign="center center"
+              [formGroup]="loginform"
+              (submit)="onLogin()">
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email"
+                       formControlName="email"
+                       matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password"
+                       formControlName="password"
+                       matInput>
+            </mat-form-field>
+
+            <button type="submit"
+                    color="primary"
+                    mat-raised-button>Signup
+            </button>
+
+            <div class="auth-options">
+                <p routerLink="/signup">NEED TO REGISTER?</p>
+            </div>
+        </form>
+
+    </mat-card>
+
+</div>

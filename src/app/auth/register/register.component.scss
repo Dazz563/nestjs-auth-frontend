@@ -1,0 +1,21 @@
+.container {
+    height: 100%;
+
+    mat-card {
+        // height: 400px;
+
+        mat-form-field {
+            width: 70%;
+        }
+
+        button {
+            width: 150px;
+            margin-top: 1rem;
+        }
+
+        .auth-options {
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+    }
+}

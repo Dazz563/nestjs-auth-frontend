@@ -1,0 +1,65 @@
+<div fxLayout="row"
+     fxLayoutAlign="center center"
+     class="container">
+
+    <mat-card fxFlex.xs="85"
+              fxFlex.sm="70"
+              fxFlex.md="40"
+              fxFlex.lg="40"
+              fxFlex.xl="30">
+
+
+        <form fxLayout="column"
+              fxLayoutAlign="center center"
+              [formGroup]="registerForm"
+              (submit)="onRegister()">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input type="text"
+                       formControlName="first_name"
+                       matInput>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input type="text"
+                       formControlName="last_name"
+                       matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email"
+                       formControlName="email"
+                       matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password"
+                       formControlName="password"
+                       matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input type="password"
+                       formControlName="password_confirm"
+                       matInput>
+                <!-- <mat-hint align="start">We will not share your info without your consent!</mat-hint> -->
+            </mat-form-field>
+
+            <button type="submit"
+                    color="primary"
+                    mat-raised-button>Signup
+            </button>
+
+            <div class="auth-options">
+                <p routerLink="/login">BACK TO LOGIN</p>
+            </div>
+        </form>
+
+    </mat-card>
+
+</div>
