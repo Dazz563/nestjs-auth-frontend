@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
 
 export class UserModel {
     id?: string;
@@ -22,13 +21,11 @@ export class AuthService {
         private http: HttpClient,
         private router: Router,
         private snackbar: MatSnackBar,
-
     ) { }
 
-
-
     register(newUser: UserModel) {
-        this.http.post<UserModel>('http://localhost:3000/api/auth/register', newUser)
+        // this.http.post<UserModel>('http://localhost:3000/api/auth/register', newUser)
+        this.http.post<UserModel>('/api/auth/register', newUser)
             .subscribe({
                 next: (userRes: UserModel) => {
                     console.log(userRes);
@@ -55,7 +52,8 @@ export class AuthService {
     }
 
     login(newUser: UserModel) {
-        this.http.post<UserModel>('http://localhost:3000/api/auth/login', newUser)
+        // this.http.post<UserModel>('http://localhost:3000/api/auth/login', newUser)
+        this.http.post<UserModel>('/api/auth/login', newUser)
             .subscribe({
                 next: (userRes: UserModel) => {
                     console.log(userRes);
@@ -82,7 +80,8 @@ export class AuthService {
     }
 
     logout() {
-        this.http.post<UserModel>('http://localhost:3000/api/auth/logout', {})
+        // this.http.post<UserModel>('http://localhost:3000/api/auth/logout', {})
+        this.http.post<UserModel>('/api/auth/logout', {})
             .subscribe({
                 next: () => {
                     this.router.navigateByUrl('/login');
