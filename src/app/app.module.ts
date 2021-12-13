@@ -6,21 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthIntercetor } from './interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    AuthModule
+    AuthModule,
   ],
   providers: [
     {

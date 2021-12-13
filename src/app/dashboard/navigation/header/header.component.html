@@ -1,0 +1,38 @@
+<mat-toolbar color="primary"
+             class="toolbar-1">
+
+    <!-- HAMBURGER MENU ICON -->
+    <!-- <div fxHide.gt-xs> -->
+    <div>
+        <button (click)="onToggleSidenav()"
+                mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
+    <!-- LOGO/COMPANY DESCRIPTION -->
+    <div><a routerLink="/dashboard">TEST BOILER NAVIGATION
+        </a>
+    </div>
+
+    <!-- TOOBAR MENU ITEMS -->
+    <div fxFlex
+         fxLayout
+         fxLayoutAlign="flex-end"
+         fxHide.xs>
+
+        <ul class="nav-items">
+            <li>
+                <a routerLink="*">Test
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav-items">
+            <li (click)="onLogout()">
+                <a>Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

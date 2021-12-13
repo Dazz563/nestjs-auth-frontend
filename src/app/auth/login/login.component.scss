@@ -3,6 +3,11 @@
 
     mat-card {
         height: 400px; // Can take off when logo comes for reactive
+        width: 400px;
+
+        form {
+            width: 100%;
+        }
 
         mat-form-field {
             width: 70%;
@@ -16,5 +21,33 @@
             margin-top: 1rem;
             cursor: pointer;
         }
+
+        .auth-options:hover, .forgot-pass:hover {
+            color: #c5c5c5ee;
+        }
+
+        .forgot-pass {
+            cursor: pointer;
+        }
     }
+}
+
+/* FxLayout XS <=  */
+@media only screen and (max-width: 599px) {
+ 
+}
+
+/* FxLayout SM =>  */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* FxLayout MD => */
+@media only screen and (min-width: 960px) {
+
+}
+
+/* FxLayout LG => */
+@media only screen and (min-width: 1280px) {
+
 }

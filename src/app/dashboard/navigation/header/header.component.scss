@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+  }
+  
+  a:hover,
+  a:active {
+    color: black;
+    cursor: pointer;
+  }
+  
+  .nav-items {
+    list-style: none;
+    padding: 0;
+    margin-right: 10px;
+  }
+  
+  .active {
+    color: black;
+  }
+  

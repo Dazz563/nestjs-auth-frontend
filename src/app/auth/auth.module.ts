@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SharedModule } from '../shared/shared.module';
 import { AuthRoutingModule } from './auth.routing';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 
@@ -12,7 +13,8 @@ import { AuthRoutingModule } from './auth.routing';
   declarations: [
     RegisterComponent,
     LoginComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ResetPasswordComponent
   ],
   imports: [
     CommonModule,

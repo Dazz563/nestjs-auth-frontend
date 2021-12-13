@@ -3,6 +3,7 @@
 
     mat-card {
         // height: 400px;
+        width: 400px;
 
         mat-form-field {
             width: 70%;
@@ -16,6 +17,10 @@
         .auth-options {
             margin-top: 1rem;
             cursor: pointer;
+        }
+
+        .auth-options:hover {
+            color: #c5c5c5ee;
         }
     }
 }

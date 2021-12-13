@@ -2,12 +2,8 @@
      fxLayoutAlign="center center"
      class="container">
 
-    <mat-card fxFlex.xs="85"
-              fxFlex.sm="70"
-              fxFlex.md="40"
-              fxFlex.lg="40"
-              fxFlex.xl="30">
-
+    <mat-card fxLayoutAlign="center center"
+              fxFlex.xs="350px">
 
         <form fxLayout="column"
               fxLayoutAlign="center center"
@@ -30,11 +26,15 @@
 
             <button type="submit"
                     color="primary"
+                    [disabled]="loginform.invalid"
                     mat-raised-button>Login
             </button>
 
             <div class="auth-options">
                 <p routerLink="/signup">NEED TO REGISTER?</p>
+            </div>
+            <div class="forgot-pass">
+                <p routerLink="/forgot-password">Forgot password?</p>
             </div>
         </form>
 

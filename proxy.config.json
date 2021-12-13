@@ -10,5 +10,13 @@
     "/api/auth/logout": {
         "target": "http://localhost:3000",
         "secure": false
+    },
+    "/api/reset-password/forgot-password": {
+        "target": "http://localhost:3000",
+        "secure": false
+    },
+    "/api/reset-password": {
+        "target": "http://localhost:3000",
+        "secure": false
     }
 }

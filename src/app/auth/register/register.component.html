@@ -2,11 +2,7 @@
      fxLayoutAlign="center center"
      class="container">
 
-    <mat-card fxFlex.xs="85"
-              fxFlex.sm="70"
-              fxFlex.md="40"
-              fxFlex.lg="40"
-              fxFlex.xl="30">
+    <mat-card fxFlex.xs="350px">
 
 
         <form fxLayout="column"
@@ -52,6 +48,7 @@
 
             <button type="submit"
                     color="primary"
+                    [disabled]="registerForm.invalid"
                     mat-raised-button>Signup
             </button>
 
